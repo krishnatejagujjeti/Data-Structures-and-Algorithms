@@ -1,0 +1,30 @@
+
+/*
+print below star pattern
+    *
+   **
+  ***
+ ****
+*****
+
+
+
+*/
+function starPattern(n) {
+
+    for (let i = n; i >=1; i--) {
+        let row = "";
+        for (let j = 1; j <= n; j++) {
+            if(j<i)
+                row = row + " ";
+            else
+                row = row + '*';
+
+        }
+        
+        console.log(row);
+    }
+
+}
+starPattern(8);
+

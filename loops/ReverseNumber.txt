@@ -1,0 +1,21 @@
+
+function Reverse(num) {
+
+    let rem = 0, n = num, rev = 0;
+    if (num < 0)
+        num = Math.abs(num);
+    while (num) {
+        rem = num % 10;
+        rev = (rev * 10) + rem;
+        num = Math.floor(num / 10);
+    }
+    if (n < 0)
+        return rev * -1;
+    else
+        return rev;
+
+}
+
+let isReverse = Reverse(28765);
+
+console.log(isReverse);

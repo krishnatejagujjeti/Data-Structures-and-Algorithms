@@ -1,0 +1,25 @@
+
+function Palindrome(num) {
+
+    let rem = 0, n = num, rev = 0;
+    if (num < 0)
+        num = Math.abs(num);
+    n = Math.abs(num);
+    while (num) {
+        rem = num % 10;
+        rev = (rev * 10) + rem;
+        num = Math.floor(num / 10);
+    }
+    if (rev === n)
+        return true;
+    else
+        return false;
+}
+
+let isReverse = Palindrome(-101);
+
+if (isReverse === true)
+    console.log("it is palindrome");
+else
+    console.log("it is not palindrome");
+

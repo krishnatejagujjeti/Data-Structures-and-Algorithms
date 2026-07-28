@@ -1,0 +1,28 @@
+
+/*
+count digits
+253 ==> 3 digits
+987987 ==> 6 digits
+
+
+*/
+function countDigits(num) {
+    let digits = 0;
+    if (num < 0)
+        num = Math.abs(num);
+    if (num === 0)
+        return 1;
+    while (num) {
+        num = Math.floor(num / 10);
+        digits += 1;
+
+    }
+    return digits;
+}
+
+let num_digits = countDigits(0);
+console.log(countDigits(253));      // 3
+console.log(countDigits(987987));   // 6
+console.log(countDigits(-7899));    // 4
+console.log(countDigits(0));        // 1
+console.log(countDigits(5));        // 1

@@ -1,0 +1,15 @@
+let array = [1, 67, 5, 90, 123, 6, 10840000, 20000];
+let largest, second;
+function findLargest(arr) {
+    largest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+
+        if (arr[i] > largest) {
+            largest = arr[i];
+           
+        }
+    }
+    return largest;
+}
+let res = findLargest(array);
+console.log(res);

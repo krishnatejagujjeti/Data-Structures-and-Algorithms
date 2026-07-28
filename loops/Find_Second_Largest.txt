@@ -1,0 +1,18 @@
+const array = [1, 67, 5, 90, 123555, 6, 10840000, 20000];
+//const array = [10, 9];
+function findSecondLargest(arr) {
+    let largest = -Infinity;
+    let second = -Infinity;
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] > largest) {
+            second = largest;
+            largest = arr[i];
+        }
+        else if (arr[i] > second && arr[i] !== largest)
+            second = arr[i];
+    }
+    return second;
+}
+let res = findSecondLargest(array);
+console.log(res);

@@ -1,0 +1,12 @@
+let array = [1, -67, 5, -90, -123, 6];
+let number = 0;
+function countNegatives(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0)
+            number = number + 1;
+
+    }
+    return number;
+}
+let res = countNegatives(array);
+console.log(res);
