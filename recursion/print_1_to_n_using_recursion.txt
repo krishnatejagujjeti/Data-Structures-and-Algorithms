@@ -1,0 +1,14 @@
+
+n=100
+def printn(x:int):
+    if x>n:
+        return 0
+    else:
+        print(x)
+        x=x+1
+        return printn(x)
+        
+
+
+
+printn(1)
