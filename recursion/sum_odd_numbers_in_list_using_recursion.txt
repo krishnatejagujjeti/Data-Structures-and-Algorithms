@@ -1,0 +1,8 @@
+def sumn(x):
+    if x == 0:
+        return 0
+    else:
+        if nums[x - 1] % 2 != 0:
+            return nums[x - 1] + sumn(x - 1)
+        else:
+            return sumn(x - 1)

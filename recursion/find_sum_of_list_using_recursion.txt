@@ -1,0 +1,10 @@
+nums=[15, 25, 35, 45, 55, 65]
+x=len(nums)
+def sumn(x):
+    if x==0:
+        return nums[0]
+    else:
+        return nums[x-1]+sumn(x-1)
+        
+        
+print(sumn(x))

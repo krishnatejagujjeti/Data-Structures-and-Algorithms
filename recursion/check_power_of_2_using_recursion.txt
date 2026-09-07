@@ -1,0 +1,11 @@
+num=7
+def exp(n):
+    if n==1:
+        return True
+    elif n<1 or n%2!=0:
+        return False
+    else:
+        return exp(n//2)
+
+
+print(exp(num))
